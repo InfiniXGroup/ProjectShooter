@@ -41,11 +41,17 @@ public class Inter_obj : MonoBehaviour
 
     public void OnSelected(SelectEnterEventArgs args) 
     {
-        args.interactableObject.transform.gameObject.SetActive(false);
+        if(args.interactorObject.transform.gameObject.GetComponent<GloveHandler>())
+        {
+            args.interactorObject.transform.gameObject.GetComponent<GloveHandler>().ShowGlove(false);
+        }
     }
-    public void OnDeselected(DeactivateEventArgs args) 
+    public void OnDeselected(SelectExitEventArgs args) 
     {
-        args.interactableObject.transform.gameObject.SetActive(true);
+        if (args.interactorObject.transform.gameObject.GetComponent<GloveHandler>())
+        {
+            args.interactorObject.transform.gameObject.GetComponent<GloveHandler>().ShowGlove(true);
+        }
     }
 }
 

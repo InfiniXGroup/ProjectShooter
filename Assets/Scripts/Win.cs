@@ -22,9 +22,9 @@ public class Win : MonoBehaviour
 
 
     // Update is called once per frame
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.GetComponent<Collider>().CompareTag("Player"))
         {
             Debug.Log("JeJe");
             canvas.SetActive(true);
