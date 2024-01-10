@@ -518,7 +518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 10.905, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.099997, y: 5.9999986}
+  m_AnchoredPosition: {x: 5.099997, y: 12.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &342633484
@@ -1305,7 +1305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.5, y: 0}
+  m_AnchoredPosition: {x: 3.5, y: 13.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1032149751
@@ -2331,7 +2331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 10.905, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.1, y: -12.3}
+  m_AnchoredPosition: {x: 5.1, y: -8.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1787605175
@@ -2359,8 +2359,10 @@ MonoBehaviour:
     by Pixabay\nRoyalty Free No Ai License : pixabay.com\n\nTools:\r\nAICoverGen_colab.ipynb\r\nBing
     Image Generator (Luffy VF by ilke_z)\r\n\r\nAssets :\r\nPirate Ship by Oleg Muzyka
     \r\nGold Coins Material by chrisg4919\r\nChaos Emerald by Kelsey113\r\nMechanical
-    glove by ananasik\r\nLicensed under Creative Commons Attribution BY 4.0 : https://sketchfab.com/3d-models/\r\nAgave\r\nWooden
-    Boat \r\nDark Cave \r\nRoyalty Free No Ai License : https://www.cgtrader.com/free-3d-models/"
+    glove by ananasik\r\nPirate gun by Rached.Abdelkhalek \nLicensed under Creative
+    Commons Attribution BY 4.0 : https://sketchfab.com/3d-models/\r\nAgave\r\nWooden
+    Boat \r\nDark Cave \r\nRoyalty Free No Ai License : https://www.cgtrader.com/free-3d-models/\nOld
+    Hand Torch by SimpleModelsForMe\nLicensed under Standard Unity Asset Store EULA"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: d75b8f41e959450c84ac6e967084d3e1, type: 2}
