@@ -43,4 +43,18 @@ public class shoot : MonoBehaviour
         }
     }
 
+    public void OnSelected(SelectEnterEventArgs args)
+    {
+        if (args.interactorObject.transform.gameObject.GetComponent<GloveHandler>())
+        {
+            args.interactorObject.transform.gameObject.GetComponent<GloveHandler>().ShowGlove(false);
+        }
+    }
+    public void OnDeselected(SelectExitEventArgs args)
+    {
+        if (args.interactorObject.transform.gameObject.GetComponent<GloveHandler>())
+        {
+            args.interactorObject.transform.gameObject.GetComponent<GloveHandler>().ShowGlove(true);
+        }
+    }
 }
