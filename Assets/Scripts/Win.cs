@@ -12,7 +12,7 @@ public class Win : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        canvas.SetActive(true);
+        canvas.SetActive(false);
     }
 
     private void Awake()
@@ -26,6 +26,7 @@ public class Win : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log("JeJe");
             canvas.SetActive(true);
         }
     }
