@@ -4794,6 +4794,7 @@ GameObject:
   - component: {fileID: 1306723122890774273}
   - component: {fileID: 7552709801508764870}
   - component: {fileID: 7739291063011375045}
+  - component: {fileID: 8504035296337701107}
   m_Layer: 0
   m_Name: Torch
   m_TagString: Untagged
@@ -4898,10 +4899,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8504035296337701107}
+        m_TargetAssemblyTypeName: Inter_obj, Assembly-CSharp
+        m_MethodName: OnSelected
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8504035296337701107}
+        m_TargetAssemblyTypeName: Inter_obj, Assembly-CSharp
+        m_MethodName: OnDeselected
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -5000,6 +5025,21 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &8504035296337701107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350448406168844883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f18a7935c93b7a4dbcd3918e3707e4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroySound: {fileID: 8300000, guid: 30b0e253c289d2c428a636483d9de6a5, type: 3}
+  ExploseFlash: {fileID: 56852242586695119, guid: 4d7e19c9fcb52be4bb9a8ba855ffe12d, type: 3}
+  damage: 100
 --- !u!1 &5350975288228721097
 GameObject:
   m_ObjectHideFlags: 0
@@ -5144,7 +5184,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.9308317, b: 0.5441177, a: 1}
   m_Intensity: 2.0206869
-  m_Range: 8.27
+  m_Range: 1.3982558
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

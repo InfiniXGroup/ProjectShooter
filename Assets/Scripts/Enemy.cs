@@ -10,7 +10,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] Animator animator;
 
-    [SerializeField] GameObject gameover;
 
     //Customize
     [SerializeField] int nbGold;
@@ -18,12 +17,13 @@ public class Enemy : MonoBehaviour
     
     private float currentHealth;
 
-    private bool isAttackAnimationPlaying = false;
+    private bool canAttack;
 
 
     void Start()
     {
         currentHealth = maxHealth;
+        canAttack = true;
     }
 
 
@@ -53,7 +53,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
 
-        if (gameover.activeInHierarchy == false)
+        if (LifePlayer.instance.GameOverUI.activeInHierarchy == false)
         {
             float sqrLen = (target.position - transform.position).sqrMagnitude;
             if (sqrLen >= 2f)
@@ -69,19 +69,21 @@ public class Enemy : MonoBehaviour
             }
             else
             {
-                if (!isAttackAnimationPlaying)
+                if(canAttack == true)
                 {
                     animator.SetBool("isAttack", true);
-                    //life player down
-                    isAttackAnimationPlaying = true;
-                }        
+                    LifePlayer.instance.LoseLife(1);
+                    canAttack = false;
+                }       
             }
         }
 
     }
-
-    public void AttackAnimationFinished()
+    IEnumerator DelayedCooldown(float delayTime)
     {
-        isAttackAnimationPlaying = false;
+        yield return new WaitForSeconds(delayTime);
+
+        canAttack = true;
     }
+
 }

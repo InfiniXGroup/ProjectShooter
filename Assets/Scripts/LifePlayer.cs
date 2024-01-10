@@ -18,17 +18,14 @@ public class LifePlayer : MonoBehaviour
     [SerializeField] AudioClip damage;
     [SerializeField] AudioClip death;
 
-    [SerializeField] GameObject GameOverUI;
+    public GameObject GameOverUI;
 
     public static LifePlayer instance;
-
-    public bool loseEvent;
 
     private void Start()
     {
         UpdateLives();
         GameOverUI.SetActive(false);
-        loseEvent = false;
         if (currentLives <= minLives)
             currentLives = startLives;
     }
@@ -41,9 +38,6 @@ public class LifePlayer : MonoBehaviour
     // Cette fonction diminue le nombre de vies
     public void LoseLife(int amount)
     {
-        if (loseEvent == false)
-        {
-            loseEvent = true;
             currentLives -= amount;
             if (currentLives <= 0)
             {
@@ -57,7 +51,7 @@ public class LifePlayer : MonoBehaviour
 
             UpdateLives();
 
-        }
+
     }
 
     // Cette fonction augmente le nombre de vies
