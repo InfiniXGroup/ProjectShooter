@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] Animator animator;
 
+    [SerializeField] GameObject gameover;
+
     //Customize
     [SerializeField] int nbGold;
     [SerializeField] public float maxHealth; //In base maxHealth = 100f;
@@ -17,9 +19,16 @@ public class Enemy : MonoBehaviour
 
     private bool isAttackAnimationPlaying = false;
 
+    public static Enemy instance; 
+
     void Start()
     {
         currentHealth = maxHealth;
+    }
+    private void Awake()
+    {
+        instance = this; 
+        PointScoreManager.instance = FindObjectOfType<PointScoreManager>();
     }
 
     public void TakeDamage(float damage)
@@ -48,7 +57,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
 
-        if (target)
+        if (gameover.activeInHierarchy == false)
         {
             float sqrLen = (target.position - transform.position).sqrMagnitude;
             if (sqrLen >= 1f)

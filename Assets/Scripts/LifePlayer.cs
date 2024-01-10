@@ -71,7 +71,7 @@ public class LifePlayer : MonoBehaviour
         UpdateLives();
     }
 
-    // Met � jour l etat du joueur
+    // Met a jour l etat du joueur
     public void UpdateLives()
     {
         switch (currentLives)

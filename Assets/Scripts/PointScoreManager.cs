@@ -11,6 +11,7 @@ public class PointScoreManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        ScorePlayer.instance = FindObjectOfType<ScorePlayer>();
     }
 
     public void modifyScore(int number)
