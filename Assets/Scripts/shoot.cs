@@ -9,6 +9,7 @@ public class shoot : MonoBehaviour
     public float damage = 10f;
     public float maxRange = 100f;
     public AudioClip ShootSound;
+    public GameObject muzzleFlash;
 
     private XRGrabInteractable grabInteractable;
 
@@ -20,12 +21,15 @@ public class shoot : MonoBehaviour
 
     private void OnActivated(ActivateEventArgs args)
     {
-            Shoot();
+        Shoot();
     }
 
     void Shoot()
     {
         AudioSource.PlayClipAtPoint(ShootSound, bulletSpawnPoint.position);
+        GameObject instantiatedMuzzleFlash = Instantiate(muzzleFlash, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        Destroy(instantiatedMuzzleFlash, 0.5f);
+
         // Perform raycast to check for hits
         RaycastHit hit;
         if (Physics.Raycast(bulletSpawnPoint.position, bulletSpawnPoint.forward, out hit, maxRange))
