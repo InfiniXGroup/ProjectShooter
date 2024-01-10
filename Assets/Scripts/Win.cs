@@ -22,7 +22,7 @@ public class Win : MonoBehaviour
 
 
     // Update is called once per frame
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
