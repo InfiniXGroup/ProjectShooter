@@ -3,13 +3,23 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScorePlayer : MonoBehaviour
 {
+    public static ScorePlayer instance;
+
+
     public int minScore; // Le nombre maximum de vies
     public int currentScore;
-    public Text ScoreText;
-    public static ScorePlayer instance;
+    public TMP_Text ScoreText;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -20,10 +30,7 @@ public class ScorePlayer : MonoBehaviour
     
     }
 
-    private void Awake()
-    {
-        instance = this;
-    }
+   
 
     public void GainScore(int amount)
     {

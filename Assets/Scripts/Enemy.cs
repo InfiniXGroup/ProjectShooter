@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
+
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Transform target;
     [SerializeField] Animator animator;
@@ -19,17 +20,12 @@ public class Enemy : MonoBehaviour
 
     private bool isAttackAnimationPlaying = false;
 
-    public static Enemy instance; 
 
     void Start()
     {
         currentHealth = maxHealth;
     }
-    private void Awake()
-    {
-        instance = this; 
-        PointScoreManager.instance = FindObjectOfType<PointScoreManager>();
-    }
+
 
     public void TakeDamage(float damage)
     {
@@ -60,10 +56,10 @@ public class Enemy : MonoBehaviour
         if (gameover.activeInHierarchy == false)
         {
             float sqrLen = (target.position - transform.position).sqrMagnitude;
-            if (sqrLen >= 1f)
+            if (sqrLen >= 2f)
             {
                 animator.SetBool("isAttack", false);
-                if (sqrLen < 20)
+                if (sqrLen < 50f)
                 {
                     agent.SetDestination(target.position);
                     animator.SetBool("isRunning", true);

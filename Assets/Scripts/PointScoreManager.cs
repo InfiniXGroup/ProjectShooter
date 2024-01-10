@@ -10,12 +10,21 @@ public class PointScoreManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
-        ScorePlayer.instance = FindObjectOfType<ScorePlayer>();
+        if (instance == null)
+        {
+            instance = this;
+        }
     }
 
     public void modifyScore(int number)
     {
-        ScorePlayer.instance.GainScore(number);
+        if (ScorePlayer.instance != null)
+        {
+            ScorePlayer.instance.GainScore(number);
+        }
+        else
+        {
+            Debug.Log("Score Player is missing !!!");
+        }
     }
 }
