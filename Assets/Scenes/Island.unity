@@ -7229,6 +7229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brute (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1130629136877428748, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5863650252929523565, guid: 30794d7fb7b0f4441b60de750279e0f1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
 --- !u!4 &187280472 stripped
@@ -7278,8 +7282,8 @@ MonoBehaviour:
   agent: {fileID: 187280474}
   target: {fileID: 1289774133}
   animator: {fileID: 187280476}
-  nbGold: 5
-  maxHealth: 100
+  nbGold: 2
+  maxHealth: 50
 --- !u!95 &187280476
 Animator:
   serializedVersion: 5
@@ -13206,10 +13210,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4407333102386615757, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 7390553463975553142, guid: 7ab6f3b0fd1a6ba41b2a47766c16613f, type: 3}
+    - target: {fileID: -3834836544883720577, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 771f6887fde534d4e99bc13dd6da6090, type: 2}
     - target: {fileID: 919132149155446097, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
       propertyPath: m_Name
       value: Brute (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6246523081281244535, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8b29aaa3eec7468097ff07adfcf29ac9, type: 2}
+    - target: {fileID: 7552347627508540364, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 771f6887fde534d4e99bc13dd6da6090, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
 --- !u!4 &743852586 stripped
@@ -13259,8 +13279,8 @@ MonoBehaviour:
   agent: {fileID: 743852588}
   target: {fileID: 1289774133}
   animator: {fileID: 743852590}
-  nbGold: 5
-  maxHealth: 100
+  nbGold: 50
+  maxHealth: 400
 --- !u!95 &743852590
 Animator:
   serializedVersion: 5
@@ -13927,6 +13947,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brute
       objectReference: {fileID: 0}
+    - target: {fileID: 1130629136877428748, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 239378781582670930, guid: 7c28e03a8ee7d1f4d83176bdc3670d22, type: 3}
+    - target: {fileID: 7552347627508540364, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 239378781582670930, guid: 7c28e03a8ee7d1f4d83176bdc3670d22, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
 --- !u!1 &799180308 stripped
@@ -13970,8 +13998,8 @@ MonoBehaviour:
   agent: {fileID: 799180312}
   target: {fileID: 1289774133}
   animator: {fileID: 799180309}
-  nbGold: 5
-  maxHealth: 100
+  nbGold: 1
+  maxHealth: 1
 --- !u!195 &799180312
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -19611,7 +19639,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193704594}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19706,7 +19734,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 95.569824, y: 21.682486, z: 95.491394, w: 25.447264}
+  m_margin: {x: 95.569824, y: 21.682486, z: 95.491394, w: 26.568539}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -24926,6 +24954,74 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 99279433519891880, guid: fb4bf109b0dd60f4c8244a42fd4383ab, type: 3}
   m_PrefabInstance: {fileID: 982312277717572627}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1243101935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1243101936}
+  - component: {fileID: 1243101939}
+  - component: {fileID: 1243101938}
+  - component: {fileID: 1243101937}
+  m_Layer: 0
+  m_Name: CollideTrap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1243101936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243101935}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.296, y: 0.1267, z: -0.3079}
+  m_LocalScale: {x: 0.10671772, y: 0.00713685, z: 0.07563376}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1384149728}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1243101937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243101935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3d2ece0964e6b4e9dcccb36d346461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 3157982305638752594}
+--- !u!65 &1243101938
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243101935}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1243101939
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243101935}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1244328626
 GameObject:
   m_ObjectHideFlags: 0
@@ -31814,6 +31910,7 @@ Transform:
   - {fileID: 913359026}
   - {fileID: 1832774281}
   - {fileID: 1059529458}
+  - {fileID: 1243101936}
   m_Father: {fileID: 2123977049592474624}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -47162,10 +47259,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4407333102386615757, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1bce2737bc5b9574cb6d058a3ef6bf16, type: 2}
+    - target: {fileID: -3834836544883720577, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 7390553463975553142, guid: 7ab6f3b0fd1a6ba41b2a47766c16613f, type: 3}
     - target: {fileID: 919132149155446097, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
       propertyPath: m_Name
       value: Brute (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7552347627508540364, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 7390553463975553142, guid: 7ab6f3b0fd1a6ba41b2a47766c16613f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 790a9799618d86e458c67c0dfc966a18, type: 3}
 --- !u!4 &1859771797 stripped
@@ -47215,8 +47324,8 @@ MonoBehaviour:
   agent: {fileID: 1859771799}
   target: {fileID: 1289774133}
   animator: {fileID: 1859771801}
-  nbGold: 5
-  maxHealth: 100
+  nbGold: 10
+  maxHealth: 150
 --- !u!95 &1859771801
 Animator:
   serializedVersion: 5
